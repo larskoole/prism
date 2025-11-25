@@ -462,6 +462,7 @@ class Stream
                         'maxOutputTokens' => $request->maxTokens(),
                         'thinkingConfig' => Arr::whereNotNull([
                             'thinkingBudget' => $providerOptions['thinkingBudget'] ?? null,
+                            'thinkingLevel' => $providerOptions['thinkingLevel'] ?? null,
                             'includeThoughts' => true,
                         ]) ?: null,
                     ]) ?: null,
